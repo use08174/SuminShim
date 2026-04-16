@@ -10,152 +10,483 @@
   <title>Sumin Shim</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sumin Shim is an incoming M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University, with research interests in Multimodal AI and Large Language Models.">
+  <meta name="author" content="Sumin Shim">
+  <meta name="keywords" content="Sumin Shim, Multimodal AI, Large Language Models, Carnegie Mellon University, Yonsei University, CVPR, NeurIPS, ACL">
+  <link rel="canonical" href="https://use08174.github.io/SuminShim/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Sumin Shim">
+  <meta property="og:description" content="Incoming M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. Research interests: Multimodal AI and Large Language Models.">
+  <meta property="og:url" content="https://use08174.github.io/SuminShim/">
+  <meta property="og:image" content="https://use08174.github.io/SuminShim/img/IMG_1168.JPG">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sumin Shim">
+  <meta name="twitter:description" content="Incoming M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. Research interests: Multimodal AI and Large Language Models.">
+  <meta name="twitter:image" content="https://use08174.github.io/SuminShim/img/IMG_1168.JPG">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sumin Shim",
+      "url": "https://use08174.github.io/SuminShim/",
+      "image": "https://use08174.github.io/SuminShim/img/IMG_1168.JPG",
+      "email": "mailto:sumins@andrew.cmu.edu",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Yonsei University"
+      },
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Carnegie Mellon University"
+      },
+      "knowsAbout": [
+        "Multimodal AI",
+        "Large Language Models",
+        "Artificial Intelligence Engineering"
+      ],
+      "sameAs": [
+        "https://github.com/use08174"
+      ],
+      "subjectOf": [
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Anchoring and Rescaling Attention for Semantically Coherent Inbetweening",
+          "url": "http://arxiv.org/abs/2603.17651",
+          "publisher": "CVPR 2026 Highlight"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Towards Visual Text Design Transfer Across Languages",
+          "url": "https://arxiv.org/abs/2410.18823v1",
+          "publisher": "NeurIPS 2024"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "name": "Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding",
+          "url": "https://arxiv.org/abs/2505.05026",
+          "publisher": "ACL 2026"
+        }
+      ]
+    }
+  </script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <style>
+    :root {
+      --text: #202124;
+      --muted: #646a73;
+      --line: #dfe5e2;
+      --accent: #2f766f;
+      --accent-soft: #e9f4f1;
+      --page: #fbfcfb;
+      --panel: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--page);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(47, 118, 111, 0.25);
+    }
+
+    a:hover,
+    a:focus {
+      color: #225d58;
+      text-decoration: none;
+      border-bottom-color: currentColor;
+    }
+
+    .page {
+      max-width: 1040px;
+      padding-top: 56px;
+      padding-bottom: 72px;
+    }
+
+    .profile {
+      position: sticky;
+      top: 32px;
+      padding: 28px 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 190px;
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 0 auto 18px;
+      display: block;
+    }
+
+    .profile-name {
+      margin: 0 0 18px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+      line-height: 1.2;
+    }
+
+    .profile-detail {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .profile-detail strong {
+      color: var(--text);
+      font-size: 15px;
+    }
+
+    .profile-detail:last-child {
+      margin-bottom: 0;
+    }
+
+    .intro {
+      margin-bottom: 42px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .intro p {
+      max-width: 680px;
+      margin: 0 0 12px;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    .intro .slogan {
+      margin: 10px 0 18px;
+      color: #225d58;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.45;
+    }
+
+    .section {
+      margin-top: 42px;
+    }
+
+    .section:first-child {
+      margin-top: 0;
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      color: var(--text);
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: 0;
+    }
+
+    .entry-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .entry {
+      padding: 18px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .entry:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .entry-title {
+      margin: 0 0 4px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .entry-meta {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .paper-link {
+      margin: 6px 0 4px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .publication-note {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .paper-entry {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .paper-thumb {
+      flex: 0 0 136px;
+      width: 136px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #f3f6f5;
+    }
+
+    .paper-copy {
+      min-width: 0;
+    }
+
+    .venue {
+      display: inline-block;
+      margin-left: 6px;
+      padding: 1px 7px;
+      color: #225d58;
+      background: var(--accent-soft);
+      border-radius: 6px;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    .project-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .project-list li {
+      margin: 10px 0;
+      padding-left: 4px;
+    }
+
+    @media (max-width: 991px) {
+      .page {
+        padding-top: 28px;
+        padding-bottom: 48px;
+      }
+
+      .profile {
+        position: static;
+        margin-bottom: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 15px;
+      }
+
+      .page {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .profile {
+        padding: 22px 18px;
+      }
+
+      .intro p {
+        font-size: 16px;
+      }
+
+      .paper-entry {
+        gap: 14px;
+      }
+
+      .paper-thumb {
+        flex-basis: 92px;
+        width: 92px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    </div>
-  </div>
-</nav>
-
 <!-- Page Content -->
-<div class="container">
+<div class="container page">
   <div class="row">
     <!-- Left Column: Photo and Personal Details -->
-    <div class="col-md-4 text-center">
-      <img src="img/IMG_1168.JPG" alt="Profile Photo" style="max-width: 200px; margin: 0 auto;"><br>
+    <aside class="col-md-4">
+      <div class="profile">
+        <img src="img/IMG_1168.JPG" alt="Sumin Shim" class="profile-photo">
 
-      <div style="font-family: 'Oswald', sans-serif; font-size: 20px; text-align: center;">
-        <b>Sumin Shim</b>
-      </div>
+        <h1 class="profile-name">Sumin Shim</h1>
 
-      <div style="text-align: center; margin-top: 10px;">
-        <p>
-          <b>Carnegie Mellon University</b><br>
-          Incoming M.S. in Artificial Intelligence Engineering, ECE<br>
+        <p class="profile-detail">
+          <strong>Carnegie Mellon University</strong><br>
+          Incoming M.S. in Artificial Intelligence Engineering, 
+          Electrical and Computer Engineering<br>
           Sep 2026 –<br>
           Pittsburgh, PA, USA
         </p>
-        <p>
-          <b>Yonsei University</b><br>
+
+        <p class="profile-detail">
+          <strong>Yonsei University</strong><br>
           B.S. in Computer Science<br>
           Mar 2021 – Feb 2026<br>
           Seoul, South Korea
         </p>
-        <p>Email: <a href="mailto:sumins@andrew.cmu.edu">sumins@andrew.cmu.edu</a></p>
+
+        <p class="profile-detail">
+          Email<br>
+          <a href="mailto:sumins@andrew.cmu.edu">sumins@andrew.cmu.edu</a>
+        </p>
       </div>
-    </div>
+    </aside>
 
     <!-- Right Column -->
-    <div class="col-md-8">
+    <main class="col-md-8">
       <!-- About Section -->
-      <div style="margin-top: 30px;">
+      <section class="intro">
         <p>
           Hello, I'm Sumin Shim! 😊
         </p>
-        <p>
-          My current research interests are Multimodal AI and Large Language Models.
+        <p class="slogan">
+          Turning Fun Ideas into Sustainable Value.
         </p>
-      </div>
+        <p>
+          As an AI researcher, I bridge the gap between cutting-edge exploration and market viability. I focus on transforming creative AI experiments into products that are as intelligent as they are sustainable.
+        </p>
+      </section>
 
       <!-- Publications Section -->
-      <div style="margin-top: 30px;">
+      <section class="section">
         <h2 id="publications">Publications</h2>
 
-        <div style="margin-top: 30px;">
-          <strong>Anchoring and Rescaling Attention for Semantically Coherent Inbetweening</strong>
-          <em>(CVPR 2026)</em><br/>
-          <ul>
-            <li class="paper">
-              <a href="http://arxiv.org/abs/2603.17651">[Paper]</a> Tae Eun Choi*, <strong>Sumin Shim*</strong>, Junhyeok Kim, Seong Jae Hwang
-            </li>
-          </ul>
-        </div>
+        <ul class="entry-list">
+          <li class="entry">
+            <div class="paper-entry">
+              <img src="img/paper-inbetweening.png" alt="Inbetweening paper thumbnail" class="paper-thumb">
+              <div class="paper-copy">
+                <p class="entry-title">
+                  Anchoring and Rescaling Attention for Semantically Coherent Inbetweening
+                  <span class="venue">CVPR 2026 Highlight</span>
+                </p>
+                <p class="paper-link">
+                  <a href="http://arxiv.org/abs/2603.17651">Paper</a>
+                </p>
+                <p class="entry-meta">
+                  Tae Eun Choi*, <strong>Sumin Shim*</strong>, Junhyeok Kim, Seong Jae Hwang
+                </p>
+              </div>
+            </div>
+          </li>
 
-        <div style="margin-top: 30px;">
-          <strong>Towards Visual Text Design Transfer Across Languages</strong>
-          <em>(NeurIPS 2024)</em><br/>
-          <ul>
-            <li class="paper">
-              <a href="https://arxiv.org/abs/2410.18823v1">[Paper]</a> Yejin Choi*, Jiwan Chung*, <strong>Sumin Shim</strong>, Giyeong Oh, Youngjae Yu
-            </li>
-          </ul>
-        </div>
+          <li class="entry">
+            <div class="paper-entry">
+              <img src="img/paper-uiux.png" alt="UI UX benchmark paper thumbnail" class="paper-thumb">
+              <div class="paper-copy">
+                <p class="entry-title">
+                  Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding
+                  <span class="venue">ACL 2026</span>
+                </p>
+                <p class="paper-link">
+                  <a href="https://arxiv.org/abs/2505.05026">Paper</a>
+                </p>
+                <p class="entry-meta">
+                  Jaehyun Jeon, Min Soo Kim, Jang Han Yoon, <strong>Sumin Shim</strong>, Yejin Choi, Hanbin Kim, Dae Hyun Kim, Youngjae Yu
+                </p>
+              </div>
+            </div>
+          </li>
 
-        <div style="margin-top: 30px;">
-          <strong>Do MLLMs Capture How Interfaces Guide User Behavior? A Benchmark for Multimodal UI/UX Design Understanding</strong>
-          <ul>
-            <li class="paper">
-              <a href="https://arxiv.org/abs/2505.05026">[Paper]</a> Jaehyun Jeon, Min Soo Kim, Jang Han Yoon, <strong>Sumin Shim</strong>, Yejin Choi, Hanbin Kim, Dae Hyun Kim, Youngjae Yu
-            </li>
-          </ul>
-        </div>
-      </div>
+          <li class="entry">
+            <div class="paper-entry">
+              <img src="img/paper-text-transfer.png" alt="Visual text design transfer paper thumbnail" class="paper-thumb">
+              <div class="paper-copy">
+                <p class="entry-title">
+                  Towards Visual Text Design Transfer Across Languages
+                  <span class="venue">NeurIPS 2024</span>
+                </p>
+                <p class="paper-link">
+                  <a href="https://arxiv.org/abs/2410.18823v1">Paper</a>
+                </p>
+                <p class="entry-meta">
+                  Yejin Choi*, Jiwan Chung*, <strong>Sumin Shim</strong>, Giyeong Oh, Youngjae Yu
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <p class="publication-note">* Equal contribution</p>
+      </section>
 
       <!-- Education Section -->
-      <div style="margin-top: 40px;">
+      <section class="section">
         <h2 id="education">Education</h2>
-        <ul>
-          <li>
-            <strong>Carnegie Mellon University</strong><br>
-            <em>Incoming M.S. student in Artificial Intelligence Engineering, Electrical and Computer Engineering</em><br>
-            Starting Sep 2026
+        <ul class="entry-list">
+          <li class="entry">
+            <p class="entry-title">Carnegie Mellon University</p>
+            <p class="entry-meta">
+              Incoming M.S. student in Artificial Intelligence Engineering, Electrical and Computer Engineering<br>
+              Starting Sep 2026
+            </p>
           </li>
-          <li style="margin-top: 15px;">
-            <strong>Yonsei University</strong><br>
-            <em>B.S. in Computer Science</em><br>
-            Mar 2021 – Feb 2026
+          <li class="entry">
+            <p class="entry-title">Yonsei University</p>
+            <p class="entry-meta">
+              B.S. in Computer Science<br>
+              Mar 2021 – Feb 2026
+            </p>
           </li>
         </ul>
-      </div>
+      </section>
 
       <!-- Experience Section -->
-      <div style="margin-top: 40px;">
+      <section class="section">
         <h2 id="experience">Experience</h2>
-        <ul>
-          <li>
-            <strong>OPT-AI</strong><br>
-            <em>LLM Research Intern</em><br>
-            Jul 2025 – Aug 2025
+        <ul class="entry-list">
+          <li class="entry">
+            <p class="entry-title">OPT-AI</p>
+            <p class="entry-meta">
+              LLM Research Intern<br>
+              Jul 2025 – Aug 2025
+            </p>
           </li>
-          <li style="margin-top: 15px;">
-            <strong>MIR Lab, Yonsei University</strong><br>
-            <em>Undergraduate Research Intern</em><br>
-            Sep 2023 – Jun 2025
+          <li class="entry">
+            <p class="entry-title">MIR Lab, Yonsei University</p>
+            <p class="entry-meta">
+              Undergraduate Research Intern<br>
+              Sep 2023 – Jun 2025
+            </p>
           </li>
-          <li style="margin-top: 15px;">
-            <strong>Prometheus AI Student Club</strong><br>
-            <em>President</em><br>
-            Mar 2024 – Feb 2025
+          <li class="entry">
+            <p class="entry-title">Prometheus AI Student Club</p>
+            <p class="entry-meta">
+              President<br>
+              Mar 2024 – Feb 2025
+            </p>
           </li>
         </ul>
-      </div>
+      </section>
 
       <!-- Projects Section -->
-      <div style="margin-top: 40px;">
+      <section class="section">
         <h2 id="projects">My Projects</h2>
-        <ul>
+        <ul class="project-list">
           <li><a href="https://github.com/use08174/krx_prometheus">The 3rd KRX Financial Language Model Performance Evaluation Competition (3rd Place)</a></li>
           <li><a href="https://github.com/use08174/Detective_LLM">Detective Game with LLM Persona Agents</a></li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </main>
   </div>
 </div>
 </body>
