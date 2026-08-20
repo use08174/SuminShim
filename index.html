@@ -12,18 +12,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/favicon-dice.svg" type="image/svg+xml">
   <meta name="google-site-verification" content="bkbOe1wIog0vSTtlcLlr1D_GK4ER5btqxjrOMg8SHLM">
-  <meta name="description" content="Sumin Shim is an M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University, with research interests in Multimodal AI and Large Language Models.">
+  <meta name="description" content="Sumin Shim is an M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University, with research interests in Multimodal AI, Generative Video Models, and Autonomous Systems.">
   <meta name="author" content="Sumin Shim">
-  <meta name="keywords" content="Sumin Shim, Multimodal AI, Large Language Models, Carnegie Mellon University, Yonsei University, CVPR, NeurIPS, ACL">
+  <meta name="keywords" content="Sumin Shim, Multimodal AI, World Models, Generative Video, Carnegie Mellon University, Yonsei University, CVPR, NeurIPS, ACL">
   <link rel="canonical" href="https://use08174.github.io/SuminShim/">
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Sumin Shim">
-  <meta property="og:description" content="M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. Research interests: Multimodal AI, Video Generation, and World Models.">
+  <meta property="og:description" content="M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. Research interests: Multimodal AI, Generative Video Model Control, and World Models.">
   <meta property="og:url" content="https://use08174.github.io/SuminShim/">
   <meta property="og:image" content="https://use08174.github.io/SuminShim/img/IMG_1168.JPG">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Sumin Shim">
-  <meta name="twitter:description" content="M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. Research interests: Multimodal AI, Video Generation, and World Models.">
+  <meta name="twitter:description" content="M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. Research interests: Multimodal AI, Generative Video Model Control, and World Models.">
   <meta name="twitter:image" content="https://use08174.github.io/SuminShim/img/IMG_1168.JPG">
   <script type="application/ld+json">
     {
@@ -43,10 +43,10 @@
       },
       "knowsAbout": [
         "Multimodal AI",
-        "Large Language Models",
+        "Generative Video Models",
+        "World Models",
         "Artificial Intelligence Engineering",
-        "Video Generation",
-        "World Models"
+        "Autonomous Systems"
       ],
       "sameAs": [
         "https://github.com/use08174"
@@ -58,6 +58,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     :root {
       --text: #202124;
       --muted: #646a73;
@@ -150,28 +154,59 @@
     }
 
     .intro {
-      margin-bottom: 42px;
-      padding-bottom: 28px;
-      border-bottom: 1px solid var(--line);
+      margin-bottom: 24px;
     }
 
     .intro p {
       max-width: 680px;
       margin: 0 0 12px;
-      font-size: 18px;
+      font-size: 17.5px;
       line-height: 1.75;
     }
 
     .intro .slogan {
-      margin: 10px 0 18px;
+      margin: 10px 0 16px;
       color: #225d58;
       font-size: 21px;
       font-weight: 700;
       line-height: 1.45;
     }
 
+    /* Navigation Bar */
+    .nav-bar {
+      margin-bottom: 36px;
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-bar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .nav-bar a {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--text);
+      border-bottom: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .nav-bar a:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
     .section {
       margin-top: 42px;
+      scroll-margin-top: 24px;
     }
 
     .section:first-child {
@@ -217,6 +252,7 @@
 
     .entry-desc {
       margin: 6px 0 0;
+      padding-left: 20px;
       font-size: 14.5px;
       color: var(--text);
     }
@@ -320,6 +356,10 @@
         flex-basis: 92px;
         width: 92px;
       }
+
+      .nav-bar ul {
+        gap: 10px;
+      }
     }
   </style>
 </head>
@@ -360,19 +400,55 @@
       <!-- About Section -->
       <section class="intro">
         <p>
-          Hello, I'm Sumin Shim! 😊
+          Hello, I'm Sumin Shim! 👋
         </p>
         <p class="slogan">
-          Turning Fun Ideas into Sustainable Value.
+          Bridging Multimodal AI & Generative Model Control with Autonomous Systems.
         </p>
         <p>
-          I am an M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. My primary research interests lie in <strong>Multimodal AI</strong>, <strong>Video Generation</strong>, and <strong>World Models</strong>. I focus on bridging cutting-edge generative model control with practical, real-world applications.
+          I am an M.S. student in Artificial Intelligence Engineering at Carnegie Mellon University. My research interests center on <strong>Multimodal AI</strong>, <strong>Generative Video Model Control</strong> (e.g., Video Diffusion Transformers), and <strong>World Models</strong>. I focus on bridging high-level LLM/VLM reasoning with physical system control and scene prediction to build safe, intelligent autonomous agents.
         </p>
       </section>
 
-      <!-- Publications Section -->
-      <section class="section">
-        <h2 id="publications">Publications</h2>
+      <!-- Navigation Menu -->
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#awards">Awards & Scholarships</a></li>
+        </ul>
+      </nav>
+
+      <!-- 1. Education Section -->
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <ul class="entry-list">
+          <li class="entry">
+            <p class="entry-title">
+              <img src="img/cmu-logo.png" alt="CMU Logo" class="school-logo-large">Carnegie Mellon University
+            </p>
+            <p class="entry-meta">
+              M.S. in Artificial Intelligence Engineering, Electrical and Computer Engineering<br>
+              Aug 2026 – Present | Pittsburgh, PA
+            </p>
+          </li>
+          <li class="entry">
+            <p class="entry-title">
+              <img src="img/yonsei-logo.png" alt="Yonsei Logo" class="school-logo-large">Yonsei University
+            </p>
+            <p class="entry-meta">
+              B.S. in Computer Science and Engineering (GPA: 3.72 / 4.3)<br>
+              Mar 2021 – Feb 2026 | Seoul, South Korea
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 2. Publications Section -->
+      <section class="section" id="publications">
+        <h2>Publications</h2>
 
         <ul class="entry-list">
           <li class="entry">
@@ -433,9 +509,9 @@
         <p class="publication-note">* Equal contribution</p>
       </section>
 
-      <!-- Experience Section -->
-      <section class="section">
-        <h2 id="experience">Experience</h2>
+      <!-- 3. Experience Section -->
+      <section class="section" id="experience">
+        <h2>Experience</h2>
         <ul class="entry-list">
           <li class="entry">
             <p class="entry-title">OptAI</p>
@@ -483,9 +559,9 @@
         </ul>
       </section>
 
-      <!-- Projects Section -->
-      <section class="section">
-        <h2 id="projects">Projects</h2>
+      <!-- 4. Projects Section -->
+      <section class="section" id="projects">
+        <h2>Projects</h2>
         <ul class="entry-list">
           <li class="entry">
             <p class="entry-title">AkaLlama: Educational Korean LLM for Yonsei Students</p>
@@ -507,15 +583,16 @@
 
           <li class="entry">
             <p class="entry-title">Detective Game with LLM Persona Agents</p>
+
             <p class="entry-meta"><a href="https://github.com/use08174/Detective_LLM">GitHub Repository</a></p>
             <p class="entry-desc">Interactive detective game utilizing custom LLM persona agents.</p>
           </li>
         </ul>
       </section>
 
-      <!-- Awards & Honors Section -->
-      <section class="section">
-        <h2 id="awards">Awards & Scholarships</h2>
+      <!-- 5. Awards & Scholarships Section -->
+      <section class="section" id="awards">
+        <h2>Awards & Scholarships</h2>
         
         <p class="entry-title" style="margin-top: 10px;">Honors & Awards</p>
         <ul class="entry-list">
@@ -537,41 +614,19 @@
         </ul>
 
         <p class="entry-title" style="margin-top: 24px;">Scholarships</p>
-        <ul class="entry-desc">
-          <li><strong>Internship Excellence Scholarship</strong>, Yonsei University (Oct 2025)</li>
-          <li><strong>University Innovation Scholarship</strong>, Yonsei University (Oct 2025; Apr 2023)</li>
-          <li><strong>SW/AI Activity Excellence Scholarship</strong>, Yonsei University (Feb 2025)</li>
-          <li><strong>Industry-Academia Project Excellence Scholarship</strong>, Yonsei University (Jul 2024)</li>
-        </ul>
-      </section>
-
-      <!-- Education Section -->
-      <section class="section">
-        <h2 id="education">Education</h2>
-        <ul class="entry-list">
-          <li class="entry">
-            <p class="entry-title">
-              <img src="img/cmu-logo.png" alt="CMU Logo" class="school-logo-large">Carnegie Mellon University
-            </p>
-            <p class="entry-meta">
-              M.S. in Artificial Intelligence Engineering, Electrical and Computer Engineering<br>
-              Aug 2026 – Present | Pittsburgh, PA
-            </p>
-          </li>
-          <li class="entry">
-            <p class="entry-title">
-              <img src="img/yonsei-logo.png" alt="Yonsei Logo" class="school-logo-large">Yonsei University
-            </p>
-            <p class="entry-meta">
-              B.S. in Computer Science and Engineering (GPA: 3.72 / 4.3)<br>
-              Mar 2021 – Feb 2026 | Seoul, South Korea
-            </p>
-          </li>
+        <ul class="entry-desc" style="padding-left: 0; list-style: none;">
+          <li style="margin-bottom: 6px;">• <strong>Internship Excellence Scholarship</strong>, Yonsei University (Oct 2025)</li>
+          <li style="margin-bottom: 6px;">• <strong>University Innovation Scholarship</strong>, Yonsei University (Oct 2025; Apr 2023)</li>
+          <li style="margin-bottom: 6px;">• <strong>SW/AI Activity Excellence Scholarship</strong>, Yonsei University (Feb 2025)</li>
+          <li style="margin-bottom: 6px;">• <strong>Industry-Academia Project Excellence Scholarship</strong>, Yonsei University (Jul 2024)</li>
         </ul>
       </section>
 
     </main>
   </div>
+</div>
+</body>
+</html>
 </div>
 </body>
 </html>
