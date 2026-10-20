@@ -1,0 +1,6 @@
+/* giscus custom theme: light theme with reactions only (comments hidden) */
+@import url("https://giscus.app/themes/light.css");
+
+.gsc-comments {
+  display: none !important;
+}
